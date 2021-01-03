@@ -16,7 +16,9 @@
     {% include "./partials/header.njk" %} #}
 
     {# {% block content %}{% endblock %} #}
-    {{ content | safe }}
+    <div class="wrapper">
+      {{ content | safe }}
+    </div>
     {# {% include "./partials/footer.njk" %} #}
     <!--JS-->
     {% if version.js | length == 0 %}
