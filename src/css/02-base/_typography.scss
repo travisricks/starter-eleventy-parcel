@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-body;
 
   @media (min-width: $md) {
     font-size: 1.2rem;
@@ -9,9 +9,11 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   line-height: 1.1;
-  font-family: 'Amiri', serif;
+  font-family: $font-display;
   font-weight: 700;
   margin: 0;
 }
@@ -39,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-body;
   font-size: 1.1rem;
 
   @media (min-width: $md) {
