@@ -4028,6 +4028,11 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+furigana-markdown-it@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/furigana-markdown-it/-/furigana-markdown-it-1.0.3.tgz#a39590c677914a2f3a25abd3c37f3dbd5bb7ffe8"
+  integrity sha512-ydfcJ/gW3f88dRcX+tdftCM7pFSh2A5piHVa6MyfSO7Dtn3CKUQ/q5QtWj0dbuYVwtm+dS1mfHVPFXdP1UJDcA==
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -10025,7 +10030,7 @@ yargs-parser@^18.1.3:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^4.1.0:
+yargs-parser@^4.1.0, yargs-parser@^4.2.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-4.2.1.tgz#29cceac0dc4f03c6c87b4a9f217dd18c9f74871c"
   integrity sha1-KczqwNxPA8bIe0qfIX3RjJ90hxw=
