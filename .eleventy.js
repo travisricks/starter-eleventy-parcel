@@ -1,22 +1,22 @@
 const fs = require('fs')
 
+// adds markdown support for furigana
+let markdownIt = require('markdown-it')
+let markdownItOptions = {
+  html: true,
+  typographer: true,
+}
+let markdownItFurigana = require('furigana-markdown-it')({
+  fallbackParens: '()',
+  extraSeparators: '-',
+  extraCombinators: "'",
+})
+let markdownLib = markdownIt(markdownItOptions).use(markdownItFurigana)
+
 module.exports = function (eleventyConfig) {
-  let markdownIt = require('markdown-it')
-  let markdownItOptions = {
-    html: true,
-    typographer: true,
-  }
-
-  let markdownItFurigana = require('furigana-markdown-it')({
-    fallbackParens: '()',
-    extraSeparators: '-',
-    extraCombinators: "'",
-  })
-  let markdownLib = markdownIt(markdownItOptions).use(markdownItFurigana)
-
   eleventyConfig.setLibrary('md', markdownLib)
 
-  // configure Browsersync to handle 404 routing when using --serve
+  // configure Browsersync to handle 404 routing when using eleventy --serve
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, bs) {
