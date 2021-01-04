@@ -39,6 +39,7 @@ module.exports = function (eleventyConfig) {
     },
   })
 
+  // return 11ty Config object (optional)
   return {
     dir: {
       input: 'src',
