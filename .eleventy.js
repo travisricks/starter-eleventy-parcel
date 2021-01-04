@@ -16,6 +16,13 @@ let markdownLib = markdownIt(markdownItOptions).use(markdownItFurigana)
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownLib)
 
+  // make a custom alphabetically sorted collection of all content
+  eleventyConfig.addCollection('allSortAlpha', function (collectionApi) {
+    return collectionApi.getAll().sort(function (a, b) {
+      return b.url - a.url
+    })
+  })
+
   // configure Browsersync to handle 404 routing when using eleventy --serve
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
