@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
   let markdownIt = require('markdown-it')
-  let options = {
+  let markdownItOptions = {
     html: true,
     typographer: true,
   }
@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
     extraSeparators: '-',
     extraCombinators: "'",
   })
-  let markdownLib = markdownIt(options).use(markdownItFurigana)
+  let markdownLib = markdownIt(markdownItOptions).use(markdownItFurigana)
 
   eleventyConfig.setLibrary('md', markdownLib)
 
