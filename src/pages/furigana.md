@@ -4,11 +4,11 @@ pageTitle: 'Furigana'
 
 ## Plugin
 
-The site is using the [Furigana plugin](https://github.com/iltrof/furigana-markdown-it) for [markdown-It](https://github.com/markdown-it/markdown-it).
+This site is using the [Furigana plugin](https://github.com/iltrof/furigana-markdown-it) for [markdown-it](https://github.com/markdown-it/markdown-it).
 
 ## Examples
 
-Works:
+### Works:
 
 | Input                                                                                                | Result                                                                    | As image                                                                             |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -25,7 +25,7 @@ Works:
 | `[あいうえお]{*}` (or `{＊}`)                                                                        | [あいうえお]{\*}`(or`{＊}                                                 | ![](https://raw.githubusercontent.com/iltrof/furigana-markdown-it/master/img/11.png) |
 | `[あいうえお]{*❤}` (or `{＊❤}`)                                                                      | [あいうえお]{\*❤}`(or`{＊❤}                                               | ![](https://raw.githubusercontent.com/iltrof/furigana-markdown-it/master/img/12.png) |
 
-Doesn't work 😞:
+### Doesn't work 😞:
 
 - Formatting: `[**漢字**]{かんじ}` doesn't make 漢字 bold.
 - Matching katakana with hiragana: `[バカな奴]{ばかなやつ}` won't recognize that バカ and ばか are the same thing.
