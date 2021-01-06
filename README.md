@@ -1,29 +1,30 @@
-# Eleventy-Parcel
+# Eleventy-Parcel Starter
 
-## Commands
+Use this to start a static site with Eleventy and Parcel.
 
-Clone or download the project from the [Github repository](https://github.com/mbarker84/eleventy-parcel).
+## Things to update:
 
-### Install dependencies
+- package file
+- \_data folder
+- css/01-config
+- delete the pages you don't need
 
-```
-npm install
-```
-
-### Run
-
-```
-npm start
-```
-
-### Build for production
+### Scripts
 
 ```
-npm run build
+# Install dependencies
+yarn install
+
+# Run
+yarn start
+
+# Build for production
+yarn build
+
+# Generate SVG sprite
+yarn svg
 ```
 
-### Generate SVG sprite
+### Thanks to
 
-```
-npm run svg
-```
+This starter is based on [Michelle Barker's starter](https://github.com/mbarker84/eleventy-parcel).
