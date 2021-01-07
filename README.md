@@ -28,3 +28,5 @@ yarn svg
 ### Thanks to
 
 This starter is based on [Michelle Barker's starter](https://github.com/mbarker84/eleventy-parcel) and tips from [Stephanie Eckles](https://11ty.rocks/).
+
+Social media preview images are generated automatically thanks to a plugin from [Stephanie Eckles](https://11ty.rocks/).
